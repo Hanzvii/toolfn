@@ -1,0 +1,22 @@
+{
+  "name": "toolfn",
+  "version": "1.0.0",
+  "description": "js tool fn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanzvii/toolfn.git"
+  },
+  "keywords": [
+    "tool","jstool","function"
+  ],
+  "author": "Hanzvii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanzvii/toolfn/issues"
+  },
+  "homepage": "https://github.com/Hanzvii/toolfn#readme"
+}
