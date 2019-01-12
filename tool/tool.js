@@ -124,6 +124,60 @@ let timeschedule = function(da){
   }
   return hours + ":" + miniters + ":" + seconds;
 }
+/**
+ * @method 验证是否符合手机号 
+ * @param {String} str 传入手机号
+ * @returns {Boolean} 正确手机号返回true，否则返回false
+ */
+let isvalidPhone = function(str) {
+  const valid_Phone = /^1[34578]\d{9}$/
+  return valid_Phone.test(str.trim())
+}
+/**
+ * @method 验证是否符合邮箱格式 
+ * @param {String} str 传入邮箱
+ * @returns {Boolean} 正确邮箱返回true，否则返回false
+ */
+let isvalidEmail = function(str) {
+  const valid_Phone = /^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$/
+  return valid_Phone.test(str.trim())
+}
+/**
+ * @method 验证是否符合URL格式 
+ * @param {String} str 传入URL
+ * @returns {Boolean} 正确URL返回true，否则返回false
+ */
+let isvalidURL = function(str) {
+  const urlregex = /^(https?|ftp):\/\/([a-zA-Z0-9.-]+(:[a-zA-Z0-9.&%$-]+)*@)*((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[1-9]?[0-9])){3}|([a-zA-Z0-9-]+\.)*[a-zA-Z0-9-]+\.(com|edu|gov|int|mil|net|org|biz|arpa|info|name|pro|aero|coop|museum|[a-zA-Z]{2}))(:[0-9]+)*(\/($|[a-zA-Z0-9.,?'\\+&%$#=~_-]+))*$/
+  return urlregex.test(str)
+}
+/**
+ * @method 验证是否全部是小写字母 
+ * @param {String} str 传入str
+ * @returns {Boolean} 正确返回true，否则返回false
+ */
+let isvalidLowerCase = function(str) {
+  const reg = /^[a-z]+$/
+  return reg.test(str)
+}
+/**
+ * @method 验证是否全部是大写字母 
+ * @param {String} str 传入str
+ * @returns {Boolean} 正确返回true，否则返回false
+ */
+let isvalidUpperCase = function(str) {
+  const reg = /^[A-Z]+$/
+  return reg.test(str)
+}
+/**
+ * @method 验证是否全部是字母 
+ * @param {String} str 传入str
+ * @returns {Boolean} 正确返回true，否则返回false
+ */
+let isvalidAlphabets = function(str) {
+  const reg = /^[A-Za-z]+$/
+  return reg.test(str)
+}
 export default {
-  numdecimal,formatTime,formatDate,formatLong,timeschedule
+  numdecimal,formatTime,formatDate,formatLong,timeschedule,isvalidPhone,isvalidEmail,isvalidURL,isvalidLowerCase,isvalidUpperCase,isvalidAlphabets
 }
