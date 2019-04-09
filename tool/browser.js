@@ -31,3 +31,6 @@ let browType = function () {
     return "notmobile"
   }
 }
+export default {
+  osType,browType
+}
