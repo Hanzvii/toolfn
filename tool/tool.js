@@ -130,7 +130,7 @@ let timeschedule = function(da){
  * @returns {Boolean} 正确手机号返回true，否则返回false
  */
 let isvalidPhone = function(str) {
-  const valid_Phone = /^1[34578]\d{9}$/
+  const valid_Phone = /^1[345789]\d{9}$/
   return valid_Phone.test(str.trim())
 }
 /**
