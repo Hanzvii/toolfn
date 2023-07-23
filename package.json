@@ -8,7 +8,8 @@
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build": "npx rollup -c"
+    "build": "npx rollup -c",
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",

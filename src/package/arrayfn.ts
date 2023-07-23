@@ -12,7 +12,7 @@ export const allEqual = <T>(arr:T[]): boolean =>  {
     }
     return arr.every(val => val === arr[0]);
 }
-interface arrayT<T> extends Array<T> {
+export interface arrayT<T> extends Array<T> {
     [index: number]: T
 }
 // 数组转CSV格式（带空格的字符串）
@@ -26,7 +26,7 @@ export const arrayToCSV = <T>(arr: arrayT<T>[], delimiter: string = ',') => {
     return arr.map(v => v.map(x => `"${x}"`).join(delimiter)).join('\n');
 }
 // averageBy：对象数组属性平均数
-interface averageByObj {
+export interface averageByObj {
     [key: string]: any
 }
 export const averageBy = (arr:averageByObj[], fn:((item:averageByObj)=>any)|string) =>{

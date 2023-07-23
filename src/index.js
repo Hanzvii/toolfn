@@ -10,7 +10,7 @@ import arrayfn from './package/arrayfn';
 // import stringfn from "./package/stringfn"
 // import timefn from "./package/timefn"
 // import urlfn from "./package/urlfn"
-// export * from './package/arrayfn';
+export * from './package/arrayfn';
 // export * from './package/arrayfn'
 // export * from "./package/browserfn"
 // export * from "./package/checkfn"

@@ -1,10 +1,10 @@
 export declare const all: <T>(arr: T[], fn?: (v: T, index: number, arr: T[]) => boolean) => boolean;
 export declare const allEqual: <T>(arr: T[]) => boolean;
-interface arrayT<T> extends Array<T> {
+export interface arrayT<T> extends Array<T> {
     [index: number]: T;
 }
 export declare const arrayToCSV: <T>(arr: arrayT<T>[], delimiter?: string) => string;
-interface averageByObj {
+export interface averageByObj {
     [key: string]: any;
 }
 export declare const averageBy: (arr: averageByObj[], fn: string | ((item: averageByObj) => any)) => number;

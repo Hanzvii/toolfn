@@ -10,7 +10,7 @@ import arrayfn from './package/arrayfn'
 // import stringfn from "./package/stringfn"
 // import timefn from "./package/timefn"
 // import urlfn from "./package/urlfn"
-// export * from './package/arrayfn';
+export * from './package/arrayfn'
 // export * from './package/arrayfn'
 // export * from "./package/browserfn"
 // export * from "./package/checkfn"
@@ -24,7 +24,7 @@ import arrayfn from './package/arrayfn'
 // export * from "./package/timefn"
 // export * from "./package/urlfn"
 // let maxFn = Object.assign(arrayfn,browserfn,checkfn,cookiefn,devicefn,formatfn,jsfn,numberfn,storagefn,stringfn,timefn,urlfn)
-let maxFn = Object.assign(arrayfn)
+let maxFn: any = Object.assign({},arrayfn)
 
 
-export default maxFn;
+export default arrayfn
